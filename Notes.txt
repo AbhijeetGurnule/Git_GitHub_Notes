@@ -46,3 +46,20 @@ Types of Status
     Files is ready to be committed
 
 ---------------------------------------------------------------------------------------------------
+
+Add
+
+Add - It adds new or changed files in your working directory to the git staging area.
+
+	Git add <file name>
+	Git add . [To add multiple files into staging area at once]
+
+---------------------------------------------------------------------------------------------------
+
+Commit
+
+Commit - It is the record of changes
+
+	Git commit -m "some understandable/meaningfull message"
+
+---------------------------------------------------------------------------------------------------
