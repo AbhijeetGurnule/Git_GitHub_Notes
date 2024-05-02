@@ -8,3 +8,41 @@ Configuration of GIT
 	
 	- To show what have we configured 
 	git config --list
+
+---------------------------------------------------------------------------------------------------
+
+Clone
+
+Clone - Cloning a repository on our local machine
+
+	Git clone <link>
+
+How to clone a repository?
+	- Go to Github > Code > Click on "<> code" [green button]
+	- Copy the link by HTTPS
+	- Git clone <Paste the link>
+	- Done
+
+---------------------------------------------------------------------------------------------------
+
+Status
+
+Status - Displays the start of the code
+
+	Git status
+
+Types of Status
+
+	1. Untracked
+	New files that git doesn't yet track
+	
+	2. Modified
+	Made changes into the files
+	
+	3. Unmodified
+	Nothing change in file
+
+	4. Staged
+    Files is ready to be committed
+
+---------------------------------------------------------------------------------------------------
