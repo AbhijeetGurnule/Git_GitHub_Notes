@@ -63,3 +63,26 @@ Commit - It is the record of changes
 	Git commit -m "some understandable/meaningfull message"
 
 ---------------------------------------------------------------------------------------------------
+
+Push
+
+Push - upload local repo content to remote repo
+
+	Git push origin main
+
+	{<Command "Git push"> <Name of the remote copy ex. Our github proile named as "origin"> <Branch Name "main">}
+
+---------------------------------------------------------------------------------------------------
+
+Init
+
+Init - used to create a new git repo
+
+	Git init
+	Git remote add origin <link>
+	Git remote -v [to verify remote]
+	Git branch [to check branch]
+	Git branch -m main [to rename branch]
+	Git push origin main
+
+---------------------------------------------------------------------------------------------------
