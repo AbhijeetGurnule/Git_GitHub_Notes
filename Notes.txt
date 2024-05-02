@@ -1,0 +1,10 @@
+Configuration of GIT 
+
+	- To give name or to display name globally what people will see us by our name
+	git config --global user.name "<My Name>"
+	
+	- To identify us by our email 
+	git config --global user.email "<My Email ID>"
+	
+	- To show what have we configured 
+	git config --list
