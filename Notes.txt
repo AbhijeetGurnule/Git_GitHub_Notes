@@ -15,7 +15,7 @@ Clone
 
 Clone - Cloning a repository on our local machine
 
-	Git clone <link>
+	git clone <link>
 
 How to clone a repository?
 	- Go to Github > Code > Click on "<> code" [green button]
@@ -29,7 +29,7 @@ Status
 
 Status - Displays the start of the code
 
-	Git status
+	git status
 
 Types of Status
 
@@ -51,8 +51,8 @@ Add
 
 Add - It adds new or changed files in your working directory to the git staging area.
 
-	Git add <file name>
-	Git add . [To add multiple files into staging area at once]
+	git add <file name>
+	git add . [To add multiple files into staging area at once]
 
 ---------------------------------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ Commit
 
 Commit - It is the record of changes
 
-	Git commit -m "some understandable/meaningfull message"
+	git commit -m "some understandable/meaningfull message"
 
 ---------------------------------------------------------------------------------------------------
 
@@ -68,7 +68,7 @@ Push
 
 Push - upload local repo content to remote repo
 
-	Git push origin main
+	git push origin main
 
 	{<Command "Git push"> <Name of the remote copy ex. Our github proile named as "origin"> <Branch Name "main">}
 
@@ -78,11 +78,72 @@ Init
 
 Init - used to create a new git repo
 
-	Git init
-	Git remote add origin <link>
-	Git remote -v [to verify remote]
-	Git branch [to check branch]
-	Git branch -m main [to rename branch]
-	Git push origin main
+	git init
+	git remote add origin <link>
+	git remote -v [to verify remote]
+	git branch [to check branch]
+	git branch -m main [to rename branch]
+	git push origin main
+
+---------------------------------------------------------------------------------------------------
+
+Branch
+
+	git branch - to view on which branch we are currently working
+
+	git branch -M main (to rename branch name)
+
+	git checkout <branch name> - to jump onto another branch / to navigate
+	
+	Git checkout -b feature1 - to create a new branch named as "feature1"
+	git checkout -b <new branch name> - to create  a new branch
+
+	git branch -d <branch name> - to delete branch 
+	Ex. Git branch -d feature2 -> it will delete a branch 
+	[Note : We can't delete the same working branch on which we are working/ current working branch.
+    Ex. If we are working on branch feature2 then we can't delete the feature2 branch]
+
+
+Switch to new branch "feature1" by git checkout feature1
+Now we are on feature1 branch,
+here we can make changes to files, or start working on new task.
+git add.
+git commit
+git push origin feature1
+	- Go to GitHub, notice feature1 branch is available now on GitHub repo 
+
+
+
+We want to merge our feature into main branch:
+
+Way 1: Through git (from local)
+	
+    git diff <branch name> (to compare commits, branches, files & more)
+
+	git merge <branch name> (to merge 2 branches)
+	Ex. Git merge main = it means we are merging our feature1 branch into main branch
+
+Way 2: Through GitHub PR (pull request)
+
+Click on "Compare & pull request"
+It will open new window for open a pull request
+
+	- Add new feature
+	- Add comment
+	- Create pull request
+	- Merge pull request
+
+But……
+Still all changes which we have done is on GitHub and not the local PC
+
+Changes are still not highlight on local, We need to use pull command to get into local
+
+---------------------------------------------------------------------------------------------------
+
+Pull
+
+Pull - It used to fetch and download content from a remote repo and immediately update the local repo to match that content.
+
+	git pull origin main 
 
 ---------------------------------------------------------------------------------------------------
