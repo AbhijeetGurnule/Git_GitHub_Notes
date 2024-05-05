@@ -147,3 +147,23 @@ Pull - It used to fetch and download content from a remote repo and immediately 
 	git pull origin main 
 
 ---------------------------------------------------------------------------------------------------
+
+How to push remote repo (GitHub) to local repo (PC) ?
+
+	1. Create a project folder on local / Open a folder in VSCode
+	2. Go to terminal
+	3. git clone <link>
+	4. cd (repo folder)
+	5. Ls -a (to check .git file has been created or not)
+	6. git status
+	7. git add <file name> (to tracked the file after modify/ add file into stagged / ready to commit)
+	Ex. git add index.html
+	
+	To add multiple files into stagged:
+	git add .
+	8. git commit -m "<meaningful message>"
+
+	9. git push origin main
+<command><default repo/remote repo, point out to our GitHub repo><branch name>
+
+---------------------------------------------------------------------------------------------------
